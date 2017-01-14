@@ -1,1 +1,2 @@
-# opengl-ged
+# Game Engine Design Coursework #
+

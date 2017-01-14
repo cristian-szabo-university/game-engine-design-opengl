@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Listener">
+      <UniqueIdentifier>{63d0ccf6-3593-48ae-bfe2-6ef3a5b91eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Listener">
+      <UniqueIdentifier>{17f98991-f002-4ba5-9a41-4e34b4e79c8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\CreditsListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameActiveListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameCharacterListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameCombatListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameMenuListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameOverListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameWindowListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\IntroListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\MainMenuListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Listener\GameShopListener.cpp">
+      <Filter>Source Files\Listener</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Listener\CreditsListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameActiveListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameCharacterListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameCombatListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameMenuListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameOverListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameWindowListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\IntroListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\MainMenuListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Listener\GameShopListener.h">
+      <Filter>Header Files\Listener</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

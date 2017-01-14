@@ -1,0 +1,48 @@
+<!--
+Resource - Default
+Index = 1,2,3 ... - Should be unique and greater than zero or else the resource wouldn't be loaded.
+Type = Graphic, Audio, Font - One of these options are available.
+Scope = 1 - Resource is required on all layouts. For example, the font and audio files.
+Scope = 2,3,4 ... - Used only inside a group of layouts. For example, the graphics files.
+
+Resource - Graphic
+Image = Resource/Test.png - The path to the image, should be valid or else will be removed from process.
+
+Resource - Font
+Font = Resource/Font.ttf - The path to the font, should be valid or else will be removed from process.
+-->
+
+<Resources>
+	<Graphic Index="1" File="Resources/Extra/Logo.png"></Graphic>
+	<Graphic Index="2" File="Resources/Extra/Arrow.png"></Graphic>
+	<Graphic Index="3" File="Resources/Extra/Shop.png"></Graphic>
+	
+	<Graphic Index="4" File="Resources/Buttons/Start.png"></Graphic>
+	<Graphic Index="5" File="Resources/Buttons/Continue.png"></Graphic>
+	<Graphic Index="6" File="Resources/Buttons/Next.png"></Graphic>
+	<Graphic Index="7" File="Resources/Buttons/Back.png"></Graphic>
+	<Graphic Index="8" File="Resources/Buttons/Battle.png"></Graphic>
+	<Graphic Index="9" File="Resources/Buttons/Buy.png"></Graphic>
+	<Graphic Index="10" File="Resources/Buttons/Load.png"></Graphic>
+	<Graphic Index="11" File="Resources/Buttons/Save.png"></Graphic>	
+	<Graphic Index="12" File="Resources/Buttons/Credits.png"></Graphic>
+	<Graphic Index="13" File="Resources/Buttons/Exit.png"></Graphic>
+	<Graphic Index="14" File="Resources/Buttons/Quit.png"></Graphic>
+	
+	<Graphic Index="15" File="Resources/Player/Attack.png"></Graphic>
+	<Graphic Index="16" File="Resources/Player/Defense.png"></Graphic>
+	<Graphic Index="17" File="Resources/Player/Neutral.png"></Graphic>
+	
+	<Graphic Index="18" File="Resources/Enemies/Raider.png"></Graphic>
+	<Graphic Index="19" File="Resources/Enemies/Brute.png"></Graphic>
+	<Graphic Index="20" File="Resources/Enemies/Fodder.png"></Graphic>
+	
+	<Graphic Index="21" File="Resources/Items/Health.png"></Graphic>
+	<Graphic Index="22" File="Resources/Items/Combat.png"></Graphic>
+	<Graphic Index="23" File="Resources/Items/Stimulant.png"></Graphic>
+	
+	<Font Index="24" File="Resources/Fonts/MavenPro/MavenPro-Black.ttf" Size="18"></Font>
+	<Font Index="25" File="Resources/Fonts/MavenPro/MavenPro-Bold.ttf" Size="16"></Font>
+	<Font Index="26" File="Resources/Fonts/MavenPro/MavenPro-Medium.ttf" Size="14"></Font>
+	<Font Index="27" File="Resources/Fonts/MavenPro/MavenPro-Regular.ttf" Size="48"></Font>
+</Resources>

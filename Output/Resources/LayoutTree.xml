@@ -1,0 +1,82 @@
+<!--
+Each layer can contain more than one object. Every layer is rendered and updated only if is visible.
+An object can represents only one resource and can be part of only one game category.
+Object category is used to extends the in-game object functionality by adding additional properties.
+Layer
+Name = Intro, MainMenu, ... - used as an identifier for the game programmer
+Visible = true or false - decides whether or not to render and update the layer
+ResourceScope = 0, 1, 2 ... - points the resources scope required for this layer
+Object
+Name = Player, Enemy, Item ... - used as an identifier for the game programmer
+PosX = 100, 200 ... - holds the horizontal coordinate of the object
+PosY = 300, 400 ... - holds the vertical coordinate of the object
+ResourceIndex = 1, 2, 3 ... - the resource to use for this object (texture , audio, font)
+Category = Button, Enemy, Player ... - the category in which this object is included.
+Visible = true or false - decides whether or not to render and update the layer
+-->
+
+<Layouts>
+	<Layer Name="LayerIntro">
+		<Object Name="ImageLogo" PosX="250" PosY="150" Category="Logo"></Object>
+		<Object Name="TextIntro" PosX="360" PosY="50" Text="Intro" Category="Title"></Object>
+	</Layer>
+	<Layer Name="LayerMainMenu">
+		<Object Name="ButtonStart" PosX="356" PosY="180" Category="ButtonStart"></Object>
+		<Object Name="ButtonLoad" PosX="357" PosY="260" Category="ButtonLoad"></Object>
+		<Object Name="ButtonCredits" PosX="345" PosY="340" Category="ButtonCredits"></Object>
+		<Object Name="ButtonQuit" PosX="358" PosY="420" Category="ButtonQuit"></Object>
+		<Object Name="TextMainMenu" PosX="280" PosY="50" Text="Main Menu" Category="Title"></Object>
+	</Layer>
+	<Layer Name="LayerGameMenu">
+		<Object Name="ButtonContinue" PosX="334" PosY="260" Category="ButtonContinue"></Object>
+		<Object Name="ButtonSave" PosX="357" PosY="340" Category="ButtonSave"></Object>
+		<Object Name="ButtonExit" PosX="362" PosY="420" Category="ButtonExit"></Object>
+		<Object Name="TextGameMenu" PosX="280" PosY="50" Text="Game Menu" Category="Title"></Object>
+	</Layer>
+	<Layer Name="LayerGameCharacter">
+		<Object Name="Arrow" PosX="0" PosY="0" Category="Arrow"></Object>
+		<Object Name="PlayerAttack" PosX="180" PosY="250" Category="PlayerAttack"></Object>
+		<Object Name="PlayerDefense" PosX="380" PosY="250" Category="PlayerDefense"></Object>
+		<Object Name="PlayerNeutral" PosX="580" PosY="250" Category="PlayerNeutral"></Object>
+		<Object Name="ButtonBack" PosX="300" PosY="520" Category="ButtonBack"></Object>
+		<Object Name="ButtonNext" PosX="400" PosY="520" Category="ButtonNext"></Object>
+		<Object Name="TextGameCharacter" PosX="220" PosY="50" Text="Select Character" Category="Title"></Object>
+	</Layer>
+	<Layer Name="LayerGameActive">
+		<Object Name="EnemyRaider1" PosX="0" PosY="0" Category="RaiderEnemy"></Object>
+		<Object Name="EnemyBrute1" PosX="40" PosY="40" Category="BruteEnemy"></Object>
+		<Object Name="EnemyBrute2" PosX="80" PosY="120" Category="BruteEnemy"></Object>
+		<Object Name="EnemyBrute3" PosX="120" PosY="240" Category="BruteEnemy"></Object>
+		<Object Name="EnemyFodder1" PosX="160" PosY="360" Category="FodderEnemy"></Object>
+		<Object Name="EnemyFodder2" PosX="200" PosY="280" Category="FodderEnemy"></Object>
+		<Object Name="EnemyFodder3" PosX="240" PosY="400"  Category="FodderEnemy"></Object>
+		<Object Name="EnemyFodder4" PosX="280" PosY="440" Category="FodderEnemy"></Object>
+		<Object Name="EnemyFodder5" PosX="320" PosY="520" Category="FodderEnemy"></Object>
+		<Object Name="HealthPack1" PosX="320" PosY="120" Category="HealthPack"></Object>
+		<Object Name="HealthPack2" PosX="480" PosY="280" Category="HealthPack"></Object>
+		<Object Name="StimulantPack1" PosX="760" PosY="560" Category="StimulantPack"></Object>
+		<Object Name="CombatPack1" PosX="540" PosY="340" Category="CombatPack"></Object>
+		<Object Name="CombatPack2" PosX="620" PosY="440" Category="CombatPack"></Object>
+		<Object Name="Shop" PosX="720" PosY="60" Category="Shop"></Object>
+	</Layer>
+	<Layer Name="LayerGameCombat">
+		<Object Name="ButtonBattle" PosX="351" PosY="420" Category="ButtonBattle"></Object>	
+	</Layer>
+	<Layer Name="LayerGameShop">
+		<Object Name="Arrow" PosX="0" PosY="0" Category="Arrow"></Object>
+		<Object Name="HealthPack" PosX="180" PosY="300" Category="HealthPack"></Object>
+		<Object Name="StimulantPack" PosX="380" PosY="300" Category="StimulantPack"></Object>
+		<Object Name="CombatPack" PosX="580" PosY="300" Category="CombatPack"></Object>		
+		<Object Name="ButtonBack" PosX="300" PosY="520" Category="ButtonBack"></Object>
+		<Object Name="ButtonBuy" PosX="400" PosY="520" Category="ButtonBuy"></Object>
+		<Object Name="TextGameShop" PosX="220" PosY="50" Text="Trade Vendor" Category="Title"></Object>		
+	</Layer>	
+	<Layer Name="LayerGameOver">
+		<Object Name="ButtonExit" PosX="358" PosY="500" Category="ButtonExit"></Object>
+		<Object Name="TextTheEnd" PosX="300" PosY="50" Text="The End" Category="Title"></Object>
+	</Layer>
+	<Layer Name="LayerCredits">
+		<Object Name="ButtonBack" PosX="358" PosY="500" Category="ButtonBack"></Object>
+		<Object Name="TextCredits" PosX="330" PosY="50" Text="Credits" Category="Title"></Object>
+	</Layer>
+</Layouts>

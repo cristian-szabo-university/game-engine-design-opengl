@@ -1,0 +1,89 @@
+<!--
+Each category can be attached to an object. This process extends the
+objects settings by wrapping the object with more variables.
+Category
+Name = Player, Item, Enemy ... - used as an identifier for the game programmer
+Component
+Key = Health, Magic, Speed ... - the new option name
+Value = 10, 100 ... - the new option value
+-->
+
+<Categories>
+	<Category Name="PlayerAttack" Type="Graphic" ResourceIndex="15">
+		<Component Key="Health" Value ="8"></Component> 
+		<Component Key="MaxHealth" Value ="8"></Component> 
+		<Component Key="Strength" Value ="12"></Component>
+		<Component Key="Speed" Value ="8"></Component>
+		<Component Key="Money" Value ="0"></Component>
+	</Category>
+	<Category Name="PlayerDefense" Type="Graphic" ResourceIndex="16">
+		<Component Key="Health" Value ="13"></Component> 
+		<Component Key="MaxHealth" Value ="13"></Component> 
+		<Component Key="Strength" Value ="7"></Component>
+		<Component Key="Speed" Value ="5"></Component>
+		<Component Key="Money" Value ="0"></Component>
+	</Category>
+	<Category Name="PlayerNeutral" Type="Graphic" ResourceIndex="17">
+		<Component Key="Health" Value ="10"></Component> 
+		<Component Key="MaxHealth" Value ="10"></Component> 
+		<Component Key="Strength" Value ="10"></Component>
+		<Component Key="Speed" Value ="6"></Component>
+		<Component Key="Money" Value ="0"></Component>
+	</Category>
+	
+	<Category Name="RaiderEnemy" Type="Graphic" ResourceIndex="18">
+		<Component Key="Health" Value ="12"></Component> 
+		<Component Key="Strength" Value ="7"></Component>
+		<Component Key="Speed" Value ="12"></Component>
+		<Component Key="Money" Value ="100"></Component>
+		<Component Key="Drop" Value ="80"></Component>
+	</Category>
+	<Category Name="BruteEnemy" Type="Graphic" ResourceIndex="19">
+		<Component Key="Health" Value ="12"></Component> 
+		<Component Key="Strength" Value ="8"></Component>
+		<Component Key="Speed" Value ="6"></Component>
+		<Component Key="Money" Value ="10"></Component>
+		<Component Key="Drop" Value ="90"></Component>
+	</Category>
+	<Category Name="FodderEnemy" Type="Graphic" ResourceIndex="20">
+		<Component Key="Health" Value ="3"></Component> 
+		<Component Key="Strength" Value ="3"></Component>
+		<Component Key="Speed" Value ="7"></Component>
+		<Component Key="Money" Value ="1"></Component>
+		<Component Key="Drop" Value ="100"></Component>
+	</Category>
+	
+	<Category Name="HealthPack" Type="Graphic" ResourceIndex="21">
+		<Component Key="Bonus" Value ="1"></Component>
+		<Component Key="Drop" Value ="60"></Component>
+		<Component Key="Price" Value ="20"></Component>
+	</Category>
+	<Category Name="CombatPack" Type="Graphic" ResourceIndex="22">
+		<Component Key="Bonus" Value ="2"></Component>
+		<Component Key="Drop" Value ="20"></Component>
+		<Component Key="Price" Value ="30"></Component>
+	</Category>	
+	<Category Name="StimulantPack" Type="Graphic" ResourceIndex="23">
+		<Component Key="Bonus" Value ="1"></Component>
+		<Component Key="Drop" Value ="20"></Component>
+		<Component Key="Price" Value ="40"></Component>
+	</Category>
+	
+	<Category Name="ButtonStart" Type="Graphic" ResourceIndex="4"></Category>
+	<Category Name="ButtonContinue" Type="Graphic" ResourceIndex="5"></Category>
+	<Category Name="ButtonNext" Type="Graphic" ResourceIndex="6"></Category>
+	<Category Name="ButtonBack" Type="Graphic" ResourceIndex="7"></Category>
+	<Category Name="ButtonBattle" Type="Graphic" ResourceIndex="8"></Category>
+	<Category Name="ButtonBuy" Type="Graphic" ResourceIndex="9"></Category>
+	<Category Name="ButtonLoad" Type="Graphic" ResourceIndex="10"></Category>
+	<Category Name="ButtonSave" Type="Graphic" ResourceIndex="11"></Category>
+	<Category Name="ButtonCredits" Type="Graphic" ResourceIndex="12"></Category>
+	<Category Name="ButtonExit" Type="Graphic" ResourceIndex="13"></Category>
+	<Category Name="ButtonQuit" Type="Graphic" ResourceIndex="14"></Category>
+	<Category Name="Title" Type="String" ResourceIndex="27"></Category>
+	<Category Name="Text" Type="String" ResourceIndex="26"></Category>
+	
+	<Category Name="Logo" Type="Graphic" ResourceIndex="1"></Category>
+	<Category Name="Arrow" Type="Graphic" ResourceIndex="2"></Category>
+	<Category Name="Shop" Type="Graphic" ResourceIndex="3"></Category>
+</Categories>

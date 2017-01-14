@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Source\GameOptions.cpp" />
+    <ClCompile Include="Source\Listener\CreditsListener.cpp" />
+    <ClCompile Include="Source\Listener\GameActiveListener.cpp" />
+    <ClCompile Include="Source\Listener\GameCharacterListener.cpp" />
+    <ClCompile Include="Source\Listener\GameCombatListener.cpp" />
+    <ClCompile Include="Source\Listener\GameMenuListener.cpp" />
+    <ClCompile Include="Source\Listener\GameOverListener.cpp" />
+    <ClCompile Include="Source\Listener\GameShopListener.cpp" />
+    <ClCompile Include="Source\Listener\GameWindowListener.cpp" />
+    <ClCompile Include="Source\Listener\IntroListener.cpp" />
+    <ClCompile Include="Source\Listener\MainMenuListener.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\GameOptions.h" />
+    <ClInclude Include="Include\Listener\CreditsListener.h" />
+    <ClInclude Include="Include\Listener\GameActiveListener.h" />
+    <ClInclude Include="Include\Listener\GameCharacterListener.h" />
+    <ClInclude Include="Include\Listener\GameCombatListener.h" />
+    <ClInclude Include="Include\Listener\GameMenuListener.h" />
+    <ClInclude Include="Include\Listener\GameOverListener.h" />
+    <ClInclude Include="Include\Listener\GameShopListener.h" />
+    <ClInclude Include="Include\Listener\GameWindowListener.h" />
+    <ClInclude Include="Include\Listener\IntroListener.h" />
+    <ClInclude Include="Include\Listener\MainMenuListener.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5A72B98-8D8C-4404-A8A5-1760F5278070}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FantasyRogue</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\dev\SDL2 plugins\include;C:\dev\SDL2-2.0.0\include;$(ProjectDir)Include;$(SolutionDir)Zeno\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\dev\SDL2-2.0.0\lib\x86;C:\dev\SDL2 plugins\lib\x86;$(SolutionDir)Zeno\Lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Output\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)Include;$(SolutionDir)Zeno\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Zeno\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;tinyxml2.lib;Zeno.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
