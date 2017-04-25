@@ -1,4 +1,5 @@
 <img src="project-logo.png" align="right" />
+
 # Game Engine Design Coursework - OpenGL
 
 An OpenGL application written in **C++** which is based on **design patterns** and **object oriented principles**. Game entities are following the **data driven design** which can be configured from an **XML** file.
